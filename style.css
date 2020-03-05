@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+}
+
+#search-city{
+    float: left;
+    width: 400px;
+    height: 400px;
+}
+
+#city-search{
+    height: 600px;
+    border-style: solid;
+    border-color: black;
+}
+p{
+    text-align: center;
+}
+
+#past-cities-container{
+    border-style: solid;
+    border-color: black;
+    height: 300px;
+    
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nameOfCity{
+    width: 100%;
+}
+
+#current_conditions{
+    float: left;
+    width: 100%;
+
+    border-style: solid;
+    border-color: black;
+    margin-left: 15px;
+
+}
