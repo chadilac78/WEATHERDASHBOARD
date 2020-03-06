@@ -18,8 +18,7 @@ p{
 }
 
 #past-cities-container{
-    border-style: solid;
-    border-color: black;
+  
     height: 300px;
     
     align-items: center;
@@ -38,4 +37,13 @@ p{
     border-color: black;
     margin-left: 15px;
 
+}
+#current_date, #current_pic_div {
+    text-align: center;
+    align-content: center;
+}
+
+p {
+    text-align: center;
+    font-weight: bolder;
 }
