@@ -8,10 +8,15 @@ h1{
     height: 400px;
 }
 
+#search{
+color: lightyellow;
+}
+
 #city-search{
     height: 600px;
     border-style: solid;
     border-color: black;
+    background-color: lightseagreen;
 }
 p{
     text-align: center;
@@ -46,4 +51,12 @@ p{
 p {
     text-align: center;
     font-weight: bolder;
+}
+
+body{
+    background-color: lightblue;
+}
+
+.jumbotron{
+    background-color: grey;
 }
