@@ -31,10 +31,9 @@ p{
     width: 100%;
 }
 
-#current_conditions{
+#current_weather{
     float: left;
     width: 100%;
-
     border-style: solid;
     border-color: black;
     margin-left: 15px;

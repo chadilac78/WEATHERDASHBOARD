@@ -1,12 +1,7 @@
 var cities = [];
 
 
-// function generateCityName() {
-//     var nameOfCity = $(this).attr("city");
-//     console.log(nameOfCity)
 
-
-// }
 retrieveCities();
 function retrieveCities() {
     let past_cities = JSON.parse(localStorage.getItem("cities"));
@@ -40,14 +35,37 @@ function renderCityButtons() {
 
 
 $("#search").on("click", function (event) {
-    // Preventing the buttons default behavior when clicked (which is submitting a form)
-    //event.preventDefault();
-    //grabs input from city search
     var city = $("#city").val().trim();
+    console.log(city);
     cities.push(city);
     saveCities();
     retrieveCities();
     renderCityButtons();
+    callAPI();
 });
 
 $(document).on("click", ".nameOfCity", renderCityButtons);
+
+
+function callAPI() {
+    for (i = 0; i < cities.length; i++) {
+        var recent_city = cities[cities.length - 1];
+    }
+
+
+    url = "api.openweathermap.org/data/2.5/weather?q=";
+    city = recent_city;
+    apiKey = "&appid=9fd1c3fbc23c725a7dcf0af637f4f01f";
+    queryurl = url + city + apiKey;
+    console.log(queryurl)
+    console.log(recent_city)
+
+    $("#city_name").text("Today's Weather in " + recent_city);
+
+    $.ajax({
+        url: queryurl,
+        method: "GET",
+    }).then(function (response) {
+        console.log(response);
+    })
+}
