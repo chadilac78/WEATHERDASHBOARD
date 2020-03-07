@@ -2,6 +2,11 @@ h1{
     text-align: center;
 }
 
+main {
+    float: left;
+   
+}
+
 #search-city{
     float: left;
     width: 400px;
@@ -36,8 +41,8 @@ p{
 }
 
 #current_weather{
-    float: left;
-    width: 100%;
+    float: inline-end;
+    width: 80%;
     border-style: solid;
     border-color: black;
     margin-left: 15px;
